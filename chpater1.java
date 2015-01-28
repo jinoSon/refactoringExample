@@ -78,8 +78,8 @@
  	}
 
 
- 	private int amountFor(Rental each) {
- 		int thisAmount = 0;
+ 	private double amountFor(Rental each) {
+ 		double thisAmount = 0;
  		switch (each.getMovie().getPriceCode()) {
  			case Movie.REGULAR:
  			thisAmount += 2;
@@ -98,4 +98,3 @@
  		return thisAmount;
  	}
  }
- 
